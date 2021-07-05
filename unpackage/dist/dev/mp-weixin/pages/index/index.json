@@ -1,9 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "layer-check": "/pages/index/layer-cover/layer-check",
-    "layer-order": "/pages/index/layer-cover/layer-order",
-    "layer-face": "/pages/index/layer-cover/layer-face",
-    "topbar": "/pages/index/index-page/top-bar"
-  }
-}
