@@ -1,0 +1,163 @@
+/* ==================
+        初始化
+ ==================== */
+body {
+	background: #fff;
+	font-size: 30upx;
+	color: #333333;
+	/* font-family: '微软雅黑'; */
+	font-family: Arial,Helvetica,sans-serif;
+	/* overflow:hidden; */
+}
+
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+table,
+tr,
+td,
+image {
+	box-sizing: border-box;
+}
+
+.none {
+	display: none;
+}
+
+.round {
+	border-radius: 5000upx;
+}
+
+.radius {
+	border-radius: 6upx;
+}
+
+button::after {
+	border: none;
+}
+
+.icon {
+	width: 40upx;
+	height: 40upx;
+	padding: 0;
+}
+
+.icon image {
+	width: 40upx;
+	height: 40upx;
+}
+
+ .underline{
+	 text-decoration: underline;
+ }
+.button-active{
+	opacity: 0.8;
+}
+image {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+	z-index: 0;
+}
+ 
+.clearfix:after, .clearfix:before{
+	display: table;
+	content: ""
+}
+.clearfix:after {
+	clear: both
+}
+
+
+.response {
+	width: 100%;
+}
+.placeholder-class{
+	color: #ccc;
+	font-size:28upx ;
+}
+
+/* #ifndef MP-ALIPAY */ 
+checkbox::before {  
+	position: absolute;
+	color: #ffffff !important;
+	top: 50%;
+	margin-top: -8px;
+	right: 5px;
+	font-size: 32upx;
+	line-height: 16px;
+	pointer-events: none;
+	transform: scale(1, 1);
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 9; 
+}
+
+ 
+checkbox .wx-checkbox-input, 
+checkbox .uni-checkbox-input {
+	margin: 0;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;  
+	transform: scale(0.6);
+	border: 0;
+	background: url(/static/icon-15.png) no-repeat;
+	background-size: cover ;
+}
+
+/* #endif */ 
+checkbox .wx-checkbox-input::before, 
+checkbox .uni-checkbox-input::before 
+  {
+	display: none;
+}
+checkbox[checked] .wx-checkbox-input, 
+checkbox.checked .uni-checkbox-input,
+.uni-checkbox-input.uni-checkbox-input-checked { 
+	background: url(/static/icon-16.png) no-repeat;
+	background-size: cover ;
+}
+
+uni-radio .uni-radio-input{
+	width: 24upx;
+    height: 24upx;
+}
+
+.btn{
+	text-align: center;
+	color:#FFF;
+	height:100upx;
+	line-height: 100upx;
+	background:rgba(255,144,37,1);
+	border-radius:50upx;
+	-webkit-border-radius:50upx;
+	-moz-border-radius:50upx;
+	-ms-border-radius:50upx;
+	-o-border-radius:50upx;
+	font-size: 36upx;
+}
+/*倒三角*/
+.corner {
+	width: 0;
+	height: 0;
+	border: 10upx solid #FF9025;
+	border-bottom-color: transparent;   
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+.iconicon-endurance{
+	color: #FFA800;	
+	margin-right: 6upx;
+}
+.icontanhao{
+	color: #655553;
+	margin-left: 8upx; 
+	vertical-align: text-top;
+	font-size: 30upx;
+}

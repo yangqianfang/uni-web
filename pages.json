@@ -1,0 +1,88 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/pickcar/pickcar",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/returncar/returncar",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/authentication/authentication",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},  {
+			"path": "pages/coupons/coupons",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "订单详情"
+			}
+		}, {
+			"path": "pages/settlement/settlement",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "费用结算"
+			}
+		}, {
+			"path": "pages/photograph/photograph",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "确认开锁用车"
+			}
+		}, {
+			"path": "pages/valuation/valuation",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "计价规则"
+			}
+		}, {
+			"path": "pages/result/result",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "完成订单"
+			}
+		}, {
+			"path": "pages/face-result/face-result",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "验证结果"
+			}
+		},{
+			"path": "pages/planorder/planorder",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "预约订单"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "烽鸟出行",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#fff"
+	}
+}

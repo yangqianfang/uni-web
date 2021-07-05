@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "sider-menu": "/components/sider-menu/sider-menu"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.0.4",
+    "amap-js": "^1.2.1",
+    "coordtransform": "^2.1.2",
+    "exif-js": "^2.3.0",
+    "jweixin-module": "^1.4.1",
+    "vue-amap": "^0.5.10",
+    "vuex-persistedstate": "^2.7.0"
+  },
+  "scripts": {
+    "publish": "scp -r unpackage/dist/build/h5/* work@172.16.30.208:/home/work/sites/uni-app/",
+    "test": "scp -r unpackage/dist/build/h5/* work@172.16.30.203:/home/wwwroot/newspace/operate-web/uni-web/"
+  }
+}

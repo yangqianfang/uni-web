@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.cy-body {
+  width: 560rpx;
+  padding: 50rpx 36rpx 50rpx 36rpx;
+  background: #fff;
+  position: relative;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+  overflow: visible;
+  text-align: center;
+  z-index: 99999;
+}
+.cy-body .title {
+  font-size: 36rpx;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+.cy-body .order-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  color: #666;
+  font-size: 28rpx;
+  padding: 15rpx 0;
+}
+.cy-body .order-item .price-type {
+  color: #FF9025;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.cy-body .detailbox {
+  margin: 30rpx auto;
+  width: 320rpx;
+  height: 88rpx;
+  font-size: 24rpx;
+  line-height: 88rpx;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  color: #666;
+  border: 1px solid #e8e8e8;
+}
+.cy-body .buttonbox {
+  padding-top: 30rpx;
+}
+.cy-body .buttonbox button {
+  color: #fff;
+  width: 208px;
+  font-size: 36rpx;
+  line-height: 50px;
+  height: 50px;
+  background: #ff9025;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(255, 144, 37, 0.59);
+          box-shadow: 0px 2px 8px 0px rgba(255, 144, 37, 0.59);
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+}
+.cy-body .close {
+  width: 42rpx;
+  height: 42rpx;
+  border: 0;
+  position: absolute;
+  left: 50%;
+  bottom: -100rpx;
+  z-index: 999999;
+  margin-left: -21rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAE6WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxOS0xMC0yM1QxOTowNzoxOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTktMTAtMjVUMTU6NTc6MzErMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTktMTAtMjVUMTU6NTc6MzErMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjljYjczODc4LTBkZDItMTg0NS04ZjY5LWNhYWMxMjc2YjQ4OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5Y2I3Mzg3OC0wZGQyLTE4NDUtOGY2OS1jYWFjMTI3NmI0ODgiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5Y2I3Mzg3OC0wZGQyLTE4NDUtOGY2OS1jYWFjMTI3NmI0ODgiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjljYjczODc4LTBkZDItMTg0NS04ZjY5LWNhYWMxMjc2YjQ4OCIgc3RFdnQ6d2hlbj0iMjAxOS0xMC0yM1QxOTowNzoxOCswODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6WMx+ZAAACnklEQVRIibVWMU/bQBS+xCKIIULuyghSOhExpFM7dEZdqi70JzD3BzAwdmdFCNGGqCCkggRLh3YqQ21HsX1+niKhs6KkDoQo8p19r4tNHTdxANGT3uC7e993996777mAiGTa0HW9trCw8GFxcfF1uVx+Nj8/rxBCSBAE0WAw+H19ff1tNBp9rFarl9MwCpMIDMNYU1X1YGlp6bnv+wPf939wzn9GUUQJIURRlEqpVHqhqupLVVXLV1dXtu/771dXV3/9A4aIY2aa5jbnXDLGmGEY69n1rBmGsc4YY5xzaZrmdnZ97AMAGkIItG17ZxZw1mzb3hFCIAA0JhKYprkthMBms7n5UPDEms3mphAC0zchiEh0XV/jnEvLsh588kk34ZxLXdfX7gja7bbFGGPpjb1e75ZSujsL0HGcw36/P0rPMcZYu922EJEQTdNqURRhNqGu615IKZFSupcHjogIACfZxEdRhJqm1QiltN7tdm8mAbiuex6T7N8XPLFut3tDKa0Tz/M6AHA67ZQAcBqTHKTA61JKBIDjPD/P8zpkOByGrVZra0acT6SU6DjO5wTccZyjPJ9Wq7U1HA5DEoYhapq2cY9kfpFSYnzyxqz9mqZthGGIRUIIKRaLU/XoTlMKBZl6/TMdEsxiEASRoiiVvM0AcLS8vPwOAA5d162vrKy8BYCTPB9FUSpBEERJks9yknUcx7yezFFKP8Wh+prjd+Z5Xie3TOMSxLgkx9YopftSSnRd9zy3TKc9tDzwFMleTHKRSfCbu4eGU6Si3++P8sBTJLu9Xu82PTcmFYh/xe4xMp21iWKH+J/lOhX3hhACHyPblmXlN5z0TZ6yZd636X/nnF8KISghhMzNzVVKpVJNVdVXs5r+RIJkPMVvyx/7mc7muaHzbQAAAABJRU5ErkJggg==) no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+ .uni-popup {
+  overflow: visible;
+}
+ .uni-popup__wrapper.uni-custom.center .uni-popup__wrapper-box {
+  overflow: visible;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+  padding: 0;
+}
+checkbox-group {
+  text-align: right;
+}
+

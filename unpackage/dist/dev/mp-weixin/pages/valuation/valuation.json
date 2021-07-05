@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "计价规则",
+  "usingComponents": {
+    "calendar": "/pages/valuation/components/calendar",
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker"
+  }
+}

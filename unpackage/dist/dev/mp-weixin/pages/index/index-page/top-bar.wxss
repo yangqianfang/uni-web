@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.topbar {
+  position: fixed;
+  color: #716261;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 30rpx 30rpx;
+  width: 100%;
+  line-height: 40rpx;
+}
+.status {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.user-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.iconren {
+  color: #333333;
+  font-size: 40rpx;
+}
+.status-text {
+  margin-left: 15rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #000;
+}
+.dot-icon {
+  width: 10rpx;
+  height: 10rpx;
+  background: #ff4252;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -5rpx;
+}
+.user-text {
+  overflow: hidden;
+}
+.user-text-address {
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  padding-right: 9rpx;
+  height: 34rpx;
+  line-height: 50rpx;
+  float: left;
+}
+.iconxiangxiayuan {
+  color: #655553;
+  line-height: 50rpx;
+}
+.kefu-icon {
+  width: 38rpx;
+  height: 42rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAsCAYAAAAXb/p7AAADl0lEQVRYR+2WTYgcVRDH/zX2ropo1F3BDyIbFM1BB7arZ8mGeAgk4ElQ8RMUknjypHhRVPwgKILoyYNKQAii4gcBRUT2EAU/dnjVza60GiEEIXgQUWOMtM70K3nrdujt9EzPbO8ED/OOU1X/+k29qldN+J8fWi9fEATXW2t3E9F2AFsBbAZw4areSQDHVfV7IvpSVRfCMPxuPbmGApyZmTlvampqD4AHAPjDJFTVJSI6AOCAiPw1aOyggBQEwV5V3Q/g8kHFe/j9DOBpEXkVgK3SqgRk5qsBvAlgR5XYkPY2gHtF5Gi/uL6AzLwTwHsALh0y+aDufxDRPcaYj3sF9AT0ff9WAG8R0bk9grtEtKCqn1hr22maHk3T9HfnOzk5uYmIriGiFoCbAewGMNFHZ68x5mCZvRSw1WrtStP0ox5wXQBveJ73zOLi4vFBSjU7O3tlo9F4AsA+x18S4zTvEJFDRdsZgM1mc4vneUJEl5QIuUm8yxhzZBCwog8zu6q+rapBSfwpa+1cFEXf5m1FwAYzfwFgW4nAu51OZ8/y8vKp9cBlMe6pmp6efk1V7yvRiZMk8eM4/iezrQFk5gcBvFISeEhEbgOgdeDysb7vu/6+u6inqo+HYfjcGYDNZvOCiYmJYwAuKwQtJUmyI47jPzcKzunMz8+f3+l0PlNVN0j5czJJkpk4jn91P56uoO/7DxHRy3lPVbWq6kdRtLSRcJkWM7sV+Q0Ar6D/lIg8uwaQmZ3jDQXAg2EY3j8KuBzk66urM5/mRxHZ4lpqpYLMfCOA5WL1PM+7tt1uu2sf2Wm1WputtS7HOfkk1trtURR9tQLo+/7DRPRSgeKwiLhNMvLDzJ+uPub5XE+KyP6sgu8AuLNA8qiIvDByuv9u8BEAL+ZzEdGHxphbMkA3BM2Cw05jzOGzAej7/k1E9Hkh1xER2ZoB/gJgqtADV0VR9NPZAGTmKwAUc50QkYszwL977EjH5744FhqNxmPtdvuHjQCem5u7zlr7vKruAnBRD82OiExmgJUbQlV/8zxvW11IB9ftdr/usevXsIoIDQy48mgSfWCMub1OFYMgeF9V3dqsPEMDuusWkU2Vyn0cmPlEn2utV0EX7f5VTcDKdsr011PBMWD+dsYVLOtVZh734HiKx89Mv4d8PCTjVZfrj/Em2bBNUufzadSxtbbCIBWqO1RjwDotcHqK64gUY4fZFFV5RwJYlXRY+79IPMQ8nIqX3wAAAABJRU5ErkJggg==) no-repeat;
+  background-size: cover;
+}
+.cancel-order {
+  font-size: 30rpx;
+  color: #000;
+}
+.titlebar {
+  position: fixed;
+  display: block;
+  z-index: 8888;
+  width: 100%;
+  background: #fff;
+}
+.titlebar .title {
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  width: 100%;
+}
+.titlebar .title .backbox {
+  position: absolute;
+  padding: 0 10rpx;
+}
+.titlebar .localaddress {
+  font-size: 24rpx;
+  padding: 20rpx;
+}
+.address-box {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+.address-box .listbox {
+  font-size: 24rpx;
+  padding: 120rpx 20rpx 20rpx 20rpx;
+  overflow: auto;
+  height: 100vh;
+}
+.address-box .listbox .lb-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.address-box .listbox .lb-item .t2 {
+  font-size: 14rpx;
+  color: #FF9025;
+}
+.address-box .listbox .lb-item-active {
+  background: #eee;
+}
+.input-view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background: #fff;
+  -webkit-border-radius: 44rpx;
+          border-radius: 44rpx;
+  line-height: 88rpx;
+  padding: 0 30rpx;
+  width: 80%;
+}
+.input-view .uni-icon {
+  line-height: 88rpx !important;
+}
+.input-view .input {
+  font-size: 28rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
